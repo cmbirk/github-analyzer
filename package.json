@@ -4,11 +4,19 @@
   "description": "Analyzes a Github user, organization, or repo for languages and dependencies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src --out-dir dist",
+    "watch": "babel src --out-dir dist --watch",
+    "setup": "npm install && npm link"
+  },
+  "bin": {
+    "github-analyzer": "./bin/index.js"
   },
   "author": "Chris Birk <cmbirk@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "6.9.0",
+    "babel-preset-es2015": "6.9.0",
     "github-api": "2.0.0"
   }
 }
