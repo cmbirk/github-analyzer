@@ -1,0 +1,11 @@
+{
+  "name": "github-analyzer",
+  "version": "0.0.0",
+  "description": "Analyzes a Github user, organization, or repo for languages and dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Birk <cmbirk@gmail.com>",
+  "license": "MIT"
+}
